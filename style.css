@@ -210,7 +210,7 @@ a{
    transition: 0.5s ease;
 }
 .todo-body:hover {
-   transform: scale(1.1);
+   transform: scale(1.02);
 }
 .title {
    margin-left: 1rem;
@@ -245,7 +245,7 @@ a{
       transition: 0.5s ease;
    }
 .ongoing-body:hover {
-   transform: scale(1.1);
+   transform: scale(1.02);
 }
 .todo-circle {
    margin-top: 1rem;
