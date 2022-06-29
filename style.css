@@ -119,6 +119,8 @@ a{
 .task-dropdown {
    /* background-color: red; */
    align-items: center;
+   display: flex;
+   justify-content: space-between;
    cursor: pointer;
    margin: 1.5rem 1rem 1rem 1rem;
    font-size: 1.2rem;
@@ -126,7 +128,7 @@ a{
    transition: 0.6s ease;
 }
 .plus {
-   margin-left: 12rem;
+   /* margin-left: 12rem; */
    font-size: 1.2rem;
    font-weight: bolder;
    cursor: pointer;
