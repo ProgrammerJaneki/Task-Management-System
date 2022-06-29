@@ -15,10 +15,10 @@
          <nav>
             <a href="/index.html" class="logo"> Ragoa </a>
             <div class="search-bar">
-               <span><i class="fa-solid fa-magnifying-glass"></i></span> Search
+               <span><i class="fa-solid fa-magnifying-glass search"></i></span> Search
             </div>
             <div class="settings">
-               <span><i class="fa-solid fa-gear"></i></span>
+               <span><i class="fa-solid fa-gear gear-settings"></i></span>
             </div>
          </nav>
       </section>
@@ -83,6 +83,7 @@
             <div class="task-dropdown">
                <i class="fa-solid fa-caret-down"></i>
                <span>TASK</span>
+               <i class="fa-regular fa-plus plus"></i>
             </div>
             <ul class="task-list-down" id="task-list-down">
                <li class="task-list">
@@ -116,26 +117,83 @@
          <div class="task-container">
             <article class="todo">
                <div class="todo-header">
-                  <span>To do</span>
-                  <i class="fa-solid fa-ellipsis options"></i>
+                  <span>TO DO</span>
+                  <i
+                     class="fa-solid fa-ellipsis options"
+                     style="cursor: pointer"
+                  ></i>
                </div>
                <div class="todo-body">
                   <span><i class="fa-regular fa-circle todo-circle"></i></span>
+                  <span class="title"> Task 2: Configure Frontend Side </span>
+                  <div class="ongoing-body-bottom">
+                     <span class="assign">Assigned: Sarah</span>
+                     <span class="deadline">Deadline: 07-22-22</span>
+                  </div>
                </div>
                <div class="todo-body">
-                  <span><i class="fa-regular fa-circle todo-circle"></i></span>
+                  <span><i class="fa-regular fa-circle todo-circle2"></i></span>
+                  <span class="title"> Task 3: Initialize Database </span>
+                  <div class="ongoing-body-bottom">
+                     <span class="assign">Assigned: Kyle</span>
+                     <span class="deadline deadline3">Deadline: 08-22-22</span>
+                  </div>
                </div>
-               <!-- <div class="todo-list">Todo</div> -->
+               <div class="todo-body">
+                  <span><i class="fa-regular fa-circle todo-circle2"></i></span>
+                  <span class="title"> Task 4: Configure Backend </span>
+                  <div class="ongoing-body-bottom">
+                     <span class="assign">Assigned: Anabelle</span>
+                     <span class="deadline deadline4">Deadline: 09-18-22</span>
+                  </div>
+               </div>
             </article>
             <article class="ongoing">
-               <span>Ongoing</span>
+               <div class="ongoing-header">
+                  <span>ONGOING</span>
+                  <i
+                     class="fa-solid fa-ellipsis options"
+                     style="cursor: pointer"
+                  ></i>
+               </div>
+               <div class="ongoing-body">
+                  <span
+                     ><i class="fa-regular fa-circle todo-circle item1"></i
+                  ></span>
+                  <span class="title item2">
+                     Task 1: Create Task Management System Layout
+                  </span>
+                  <div class="ongoing-body-bottom">
+                     <span class="assign">Assigned: Jannel</span>
+                     <span class="deadline">Deadline: 07-01-22</span>
+                  </div>
+               </div>
             </article>
          </div>
          <!-- Lower Part -->
          <div class="task-detailed-container">
-            <article class="task-ovewview">Task 1- 4</article>
-            <div class="task-graph-percentage">Sphere</div>
-         </div>
+            <article class="task-overview">
+               <div class="task-percentage">
+                  <span>TASK 1</span>
+                  <div class="percentage"></div>
+               </div>
+               <div class="task-percentage">
+                  <span>TASK 2</span>
+                  <div class="percentage percentage2"></div>
+               </div>
+               <div class="task-percentage">
+                  <span>TASK 3</span>
+                  <div class="percentage percentage3"></div>
+               </div>
+               <div class="task-percentage">
+                  <span>TASK 4</span>
+                  <div class="percentage percentage4"></div>
+               </div>
+            </article>
+            <!-- <div class="task-graph-percentage">
+               <div class="graph"></div>
+            </div>
+         </div> -->
       </section>
    </body>
 </html>
