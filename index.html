@@ -3,7 +3,139 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="/fontawesome-free-6.1.1-web/css/all.min.css"
+      />
+      <link rel="stylesheet" href="style.css" />
       <title>Task Management System</title>
    </head>
-   <body></body>
+   <body>
+      <section class="header">
+         <nav>
+            <a href="/index.html" class="logo"> Ragoa </a>
+            <div class="search-bar">
+               <span><i class="fa-solid fa-magnifying-glass"></i></span> Search
+            </div>
+            <div class="settings">
+               <span><i class="fa-solid fa-gear"></i></span>
+            </div>
+         </nav>
+      </section>
+      <section class="task-section">
+         <div class="left-navigators">
+            <!-- Task Assigned -->
+            <ul class="assigned" id="assigned">
+               <li class="assigned1">
+                  <a href="" class="assigned-names"
+                     ><span
+                        ><img
+                           src="/images/man24.png"
+                           width="50"
+                           height="50"
+                           alt=""
+                           class="names-pics"
+                     /></span>
+                  </a>
+                  <span class="name">Jannel</span>
+               </li>
+               <li class="assigned2">
+                  <a href="" class="assigned-names"
+                     ><span
+                        ><img
+                           src="/images/woman24.png"
+                           width="50"
+                           height="50"
+                           alt=""
+                           class="names-pics"
+                     /></span>
+                  </a>
+                  <span class="name">Sarah</span>
+               </li>
+               <li class="assigned3">
+                  <a href="" class="assigned-names"
+                     ><span
+                        ><img
+                           src="/images/man.png"
+                           width="50"
+                           height="50"
+                           alt=""
+                           class="names-pics"
+                     /></span>
+                  </a>
+                  <span class="name">Kyle</span>
+               </li>
+               <li class="assigned4">
+                  <a href="" class="assigned-names"
+                     ><span
+                        ><img
+                           src="/images/woman.png"
+                           width="50"
+                           height="50"
+                           alt=""
+                           class="names-pics"
+                     /></span>
+                  </a>
+                  <span class="name">Anabelle</span>
+               </li>
+               <!-- List of Tasks -->
+            </ul>
+            <div class="task-dropdown">
+               <i class="fa-solid fa-caret-down"></i>
+               <span>TASK</span>
+            </div>
+            <ul class="task-list-down" id="task-list-down">
+               <li class="task-list">
+                  <span class="tasks">
+                     <i class="fa-solid fa-circle c1"></i>
+                     Task 1
+                  </span>
+               </li>
+               <li class="task-list">
+                  <span class="tasks">
+                     <i class="fa-solid fa-circle c2"></i>
+                     Task 2
+                  </span>
+               </li>
+               <li class="task-list">
+                  <span class="tasks">
+                     <i class="fa-solid fa-circle c3"></i>
+                     Task 3
+                  </span>
+               </li>
+               <li class="task-list">
+                  <span class="tasks">
+                     <i class="fa-solid fa-circle c4"></i>
+                     Task 4
+                  </span>
+               </li>
+            </ul>
+         </div>
+         <!-- Main Body Task Section -->
+         <!-- Upper Part -->
+         <div class="task-container">
+            <article class="todo">
+               <div class="todo-header">
+                  <span>To do</span>
+                  <i class="fa-solid fa-ellipsis options"></i>
+               </div>
+               <div class="todo-body">
+                  <span><i class="fa-regular fa-circle todo-circle"></i></span>
+               </div>
+               <div class="todo-body">
+                  <span><i class="fa-regular fa-circle todo-circle"></i></span>
+               </div>
+               <!-- <div class="todo-list">Todo</div> -->
+            </article>
+            <article class="ongoing">
+               <span>Ongoing</span>
+            </article>
+         </div>
+         <!-- Lower Part -->
+         <div class="task-detailed-container">
+            <article class="task-ovewview">Task 1- 4</article>
+            <div class="task-graph-percentage">Sphere</div>
+         </div>
+      </section>
+   </body>
 </html>

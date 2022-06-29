@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+   font-family: "Roboto Mono", monospace;
+   margin: 0;
+   padding: 0;
+}
+body  {
+   /* background-color: var(--color-light-blue); */
+      /* background-color: var(--color-mid-blue); */
+      background-color: var(--dark-blue-background);
+      /* padding: 0 90px; */
+}
+:root {
+         --dark-blue-background: #1A1A40;
+         --secondary-blue-background: #1a2440;
+         --secondary-dark-blue: #161038;
+         --color-dark-blue: #1c1c21;
+         --color-mid-blue: #16171d;
+         --color-light-blue: #1f2128;
+         --color-boring-blue: #51557E;
+         --text-font: #5e5d7a;
+         --text-font-hover: #5f46ba;
+         --text-font-size: 16px;
+}
+a{
+   color: white;
+   text-decoration: none;
+}
+.header {
+   /* background-color: var(--color-dark-blue); */
+   background-color: #1a2440;
+   border-radius: 20px;
+   /* background-color: var(--color-mid-blue); */
+   /* background-color: var(--color-dark-blue); */
+   color: white;
+   /* width: 100%; */
+   height: 5rem;
+   margin: 1rem;
+}
+.header nav {
+   align-items: center;
+   display: flex;
+   font-size: 20px;
+   justify-content:space-between;
+   padding: 1.6rem 2rem;
+}
+.task-section {
+   /* background-color: red; */
+   color: white;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: repeat(6, 12vw);
+   margin: 20px;
+   /* width: calc(100% - 200px); */
+}
+/* Left Navivator */
+.left-navigators  {
+   background-color: var(--secondary-blue-background);
+   border-radius: 20px;
+   font-weight: bolder;
+   font-size: 1rem;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 4;
+   margin-right: 20px;
+   padding: 2rem;
+}
+/* Assigned Names */
+
+.assigned {
+   /* background-color: yellow; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.assigned2 {
+   background-color: var(--color-boring-blue);
+   cursor: pointer;
+}
+.assigned > li {
+   /* background-color: blue; */
+   align-items: center;
+   border-radius: 20px;
+   cursor: pointer;
+   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+   display: flex;
+   padding: 0.3rem;
+   transition: 0.6s ease;
+}
+.assigned > li:hover {
+   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   /* background-color: #6867AC; */
+}
+.assigned-names ~ span {
+   margin-left: 2rem;
+}
+.assigned > li, .task-list-down > li{
+   list-style: none;
+   margin: 0.1rem;
+}
+/* Task Dropdown */
+.task-dropdown {
+   /* background-color: red; */
+   cursor: pointer;
+   margin: 1.5rem 1rem 1rem 1rem;
+   font-size: 1.2rem;
+   font-weight: blder;
+}
+.task-list-down {
+   font-size: 0.9rem;
+}
+.fa-circle {
+   font-size: 0.8rem;
+   margin-right: 0.3rem;
+}
+.c1 {color: #C2DED1;}
+.c2 {color: #CE7BB0;}
+.c3 {color: #6867AC;}
+.c4 {color: #BB6464;}
+.task-list {
+   padding: 1rem;
+}
+
+/* TASK CONTAINER */
+.task-container {
+   background-color: var(--secondary-blue-background);
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   grid-column-start: 3;
+   grid-column-end: 9;
+   grid-row-start: 1;
+   grid-row-end: 3;
+   padding: 4rem;
+}
+.todo {
+   background-color: #5f46ba;
+   border-radius: 10px;
+   height: 250px;
+   width: 340px;
+   padding: 1rem;
+}
+.todo-header {
+   /* background-color: blue; */
+   display: flex;
+   font-size: 1.4rem;
+   font-weight: bold;
+   justify-content: space-between;
+}
+.todo-body {
+   background-color: #BB6464;
+   border-radius: 10px;
+   height: 4.2rem;
+   padding: 1rem;
+   margin: .5rem 0;
+}
+.todo-body > span {
+}
+.todo-circle {
+   font-size: 2rem;
+}
+.ongoing {
+   background-color: #5f46ba;
+   border-radius: 10px;
+   height: 250px;
+   width: 340px;
+   padding: 1rem;
+}
+.task-detailed-container {
+   margin-top: 20px;
+   border-radius: 20px;
+   background-color: #5f46ba;
+   grid-column-start: 3;
+   grid-column-end: 9;
+   grid-row-start: 3;
+   grid-row-end: 5;
+   padding: 2rem;
+}
