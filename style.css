@@ -28,7 +28,65 @@ a{
    color: white;
    text-decoration: none;
 }
+/* Media Screen */
+@media screen and (max-width: 1582px) {
+   .left-navigators, .task-list-down, .task-dropdown {
+      /* color: green; */
+      font-size: 0.9rem !important;
+   }
+   .names-pics {
+      width: 35px !important;
+      height: 35px !important;
+   }
+   .task-list-down > li, .assigned > li {
+      margin: 0rem !important;
+   }
+   .todo, .ongoing {
+      height: 200px !important;
+      width: 360px !important;
+   }
+   .middle {
+      margin: 0 2rem !important;
+   }
+   .deadline {
+      right: -140 !important;
+   }
+   .deadline3 {
+      right: -145 !important;
+   }
+   .deadline4 {
+      right: -115 !important;
+   }
+   .percentage {
+      height: 0.8rem;
+      width: 30rem !important;
+   }
+   .task-overview {
+      padding: 0.5rem 2rem !important;
+   }
+   .task-percentage {
+      font-size: 0.7rem !important;
+   }
+   
+}
+/* @media screen and (max-width: 1590px) {
+   .left-navigators,
+   .task-list-down,
+   .task-dropdown {
+      color: red;
+      font-size: 0.9rem !important;
+   }
 
+   .names-pics {
+      width: 45px !important;
+      height: 45px !important;
+   }
+
+   .task-list-down>li,
+   .assigned>li {
+      margin: 0.1rem !important;
+   }
+} */
 .header {
    background-color: var(--color-dark-blue);
    /* background-image: url(/images/anton.jpg);
@@ -77,6 +135,11 @@ a{
    grid-row-end: 4;
    margin-right: 20px;
    padding: 2rem;
+   transition: 0.6s ease;
+}
+.names-pics {
+   width: 50px;
+   height:50px;
 }
 /* Assigned Names */
 
@@ -114,6 +177,7 @@ a{
 .assigned > li, .task-list-down > li{
    list-style: none;
    margin: 0.1rem;
+   transition: 0.6s ease;
 }
 /* Task Dropdown */
 .task-dropdown {
@@ -139,6 +203,7 @@ a{
 }
 .task-list-down {
    font-size: 0.9rem;
+   transition: 0.6s ease;
 }
 .fa-circle {
    font-size: 0.8rem;
@@ -169,10 +234,11 @@ a{
    /* border: solid var(--text-font-hover) 3px; */
    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
    border-radius: 10px;
-   height: 250px;
-   width: 340px;
+   height: 280px;
+   width: 440px;
    padding: 1rem;
    overflow: auto;
+   transition: 0.6s ease;
 }
 ::-webkit-scrollbar {
    width: 10px;
@@ -217,20 +283,33 @@ a{
 .title {
    margin-left: 1rem;
 }
-.specific-details {
-   display: flex;
-}
-.todo-circle, .todo-circle2 {
+.todo-circle {
    font-size: 1.2rem;
-   margin-top: .2rem;
+}
+.todo-circle2 {
+   font-size: 1.2rem;
+   /* margin-top: .5rem; */
+}
+.todo-title-holder {
+   align-items: center;
+   /* background-color: red; */
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 2rem;
+   padding: 0.2rem;
+   /* background-color: red; */
 }
 .ongoing {
    /* background-color: #5f46ba; */
    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
    border-radius: 10px;
-   height: 250px;
-   width: 340px;
+   height: 280px;
+   width: 440px;
+   /* height: 250px;
+   width: 340px; */
    padding: 1rem;
+   transition: 0.6s ease;
 }
 .ongoing-body {
    position: relative;
@@ -240,7 +319,7 @@ a{
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 10px;
       cursor: pointer;
-      display: flex;
+      display: inline-block;
       height: 5rem;
       padding: 0.9rem;
       margin: 2rem 0;
@@ -253,9 +332,14 @@ a{
    margin-top: 1rem;
 }
 .ongoing-body-bottom {
+   /* background-color: red; */
+   display: flex;
    bottom: 10;
    font-size: 12px;
    position: absolute;
+}
+.middle {
+   /* margin: 0 5rem; */
 }
 .assign {
    background-color: #35858B;
@@ -265,14 +349,20 @@ a{
 .deadline {
    background-color: #BB6464;
    border-radius: 10px;
-   margin-left: 2.6rem;
+   /* margin-left: 2.6rem; */
    padding: 5px;
+   right: -290;
+   position: absolute;
+}
+.on-deadline {
+   right: -290;
 }
 .deadline4 {
-   margin-left: 1.2rem;
+   right: -265;
+   /* margin-left: 1.2rem; */
 }
-.deadine3 {
-   margin-left: .2rem;
+.deadline3 {
+   right: -295;
 }
 .item1 {
    grid-column-start: 2;
@@ -315,6 +405,7 @@ a{
    font-size: 1rem;
    /* justify-content: space-between; */
    height: 60px;
+   transition: 0.6s ease;
 }
 .task-percentage > span {
    margin-right: 4rem;
@@ -324,6 +415,7 @@ a{
    border-radius: 10px;
    height: 1rem;
    width: 45rem;
+   transition: 0.6s ease;
 }
 .percentage2 {
    background: linear-gradient(to right, #CE7BB0 0%, #CE7BB0 10%, var(--dark-blue-background) 0%, var(--dark-blue-background) 100%);
